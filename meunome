@@ -1,0 +1,17 @@
+programa
+{
+
+	cadeia nome
+	cadeia sobrenome
+	
+	funcao inicio()
+	{
+		escreva("Digite o seu nome: \n")
+		leia(nome)
+
+		escreva("Digite o seu sobrenome: \n")
+		leia(sobrenome)
+		escreva(nome)
+		escreva(sobrenome)
+	}
+}
