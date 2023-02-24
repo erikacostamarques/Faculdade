@@ -1,0 +1,14 @@
+{
+
+	cadeia time
+	cadeia sobrenome
+	
+	funcao inicio()
+	{
+		escreva("Digite o seu time: \n")
+		leia(time)
+
+		escreva("O seu time Ã©: \n")
+		escreva(time)
+	}
+}
