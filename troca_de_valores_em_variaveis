@@ -1,0 +1,27 @@
+programa
+{
+	//algoritmo para troca de valores
+	cadeia valorA
+	cadeia valorB
+	cadeia valorC
+	
+	funcao inicio()
+	{
+		escreva("Olá¡, vamos inverter um pouco as coisas?")
+		escreva("\n")
+		escreva("Insira o valor A: ")
+		leia(valorA)
+		escreva("Muito bem! Agora insira o valor B: ")
+		leia(valorB)
+
+		valorC = valorA
+		valorA = valorB
+		valorB = valorC
+
+		escreva("\n")
+
+		escreva("O resultado A é: ", valorA)
+		escreva("\n")
+		escreva("O resultado B é: ", valorB)
+	}
+}
