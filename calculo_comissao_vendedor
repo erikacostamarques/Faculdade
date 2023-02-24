@@ -1,0 +1,64 @@
+programa
+{
+	// cálculo para saber o salário atual do vendedor e previsão para o próximo mês.
+	cadeia nomevendedor //nome do vendedor
+	inteiro quantidadecarrovendido //quantidade de carro vendido pela vendedora
+	inteiro valortotalvendidoloja //quantidade total de carro vendedido pela loja
+	inteiro precodocarro //preço de cada carro
+	real comissaoindividual// comissão individual do vendedor
+	real comissaototalloja// valor total da comissão total da loja
+	real salario //salário fixo do vendedor
+	real comissaototal //valor total da comissão
+	real comissaoindividualmq //comissão do mês que vem do vendedor
+	real comissaototallojamq //comissão do mês que vem total da loja
+	real comissaototalmq //comissão total loja do mês que vem
+	real previsaosalario //previsão salarial
+	real comissaototallojamq10 //comissão da vendedora 10%
+	real previsaosalario10 //previsão considerando 10% de comissão
+	
+	funcao inicio()
+	{
+		escreva("Para sabermos o salário final do vendedor, precisamos das informações abaixo: ")
+		escreva("\n")
+		escreva("Informe o nome completo do vendedor: ")
+		leia(nomevendedor)
+		escreva("Quantidade de carro vendido pelo vendedor ", nomevendedor, ", neste mês: ")
+		leia(quantidadecarrovendido)
+		escreva("Total em carros vendidos pela concessionária: ")
+		leia(valortotalvendidoloja)
+		escreva("Valor unitário dos carros: ")
+		leia(precodocarro)
+		escreva("\n")
+
+
+		//cálculo para saber o salário atual da vendedora
+		comissaoindividual = 50 * quantidadecarrovendido
+		comissaototalloja = (precodocarro * valortotalvendidoloja) * 0.05
+		comissaototal = comissaoindividual + comissaototalloja
+		salario = 500 + comissaoindividual + comissaototalloja
+
+		//cálculo para saber a previsão salarial do vendedor considenrando 15 carros vendidos
+		comissaoindividualmq = 50 * 15
+		comissaototallojamq = (precodocarro * 15) * 0.05
+		previsaosalario = comissaoindividualmq + comissaototallojamq + 500
+
+		//cálculo para saber a previsão salarial do vendedor considenrando 15 carros vendidos + 10% de comissão
+		comissaoindividualmq = 50 * 15
+		comissaototallojamq10 = (precodocarro * 15) * 0.10
+		previsaosalario10 = comissaoindividualmq + comissaototallojamq10 + 500
+
+		// saída de dados
+		escreva("O nome do vendedor é: ", nomevendedor)
+		escreva("\n")
+		escreva("O valor total da comissão é: R$", comissaototal)
+		escreva("\n")
+		escreva("O salário do vendedor este mês é de: R$", salario)
+		escreva("\n")
+
+		//saída de dados para previsão salarial
+		escreva("A previsão salarial do vendedor ", nomevendedor, " para o próximo mês, considerando comissão de 5%, é de: R$", previsaosalario ".")
+		escreva("\n")
+		//saída de dados para previsão salarial de 10%
+		escreva("A previsão salarial do vendedor ", nomevendedor, " para o próximo mês, considerando comissão de 10%, é de: R$", previsaosalario10 ".")		
+	}
+}
