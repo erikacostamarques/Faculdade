@@ -1,0 +1,27 @@
+programa
+{
+
+	//Vamos desenvolver um pseudocÃ³digo para calcular a soma de dois nÃºmeros?
+	real numero1
+	real numero2
+	real soma
+	
+	funcao inicio()
+	{
+		escreva("OlÃ¡, vamos somar!")
+		escreva("\n")
+		escreva("Informe o primeiro nÃºmero para comeÃ§armos: ")
+		leia(numero1)
+		
+		escreva("Muito bem!")
+		escreva("\n")
+		escreva("Para continuarmos, informe o segundo nÃºmero: ")
+		leia(numero2)
+		
+		soma = numero1 + numero2
+		
+		escreva("O resultado da nossa soma Ã©: ", soma)
+		escreva("\n")
+		escreva("Obrigado por calcular comigo")
+	}
+}
