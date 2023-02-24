@@ -1,0 +1,43 @@
+programa
+{
+	//recebimento e conversão de informações
+	cadeia nomecompleto
+	inteiro anonascimento
+	inteiro horaatual
+	inteiro idade
+	inteiro minutoatual
+	inteiro conversaohora
+	inteiro totalhora
+	inteiro quantofalta
+	
+	funcao inicio()
+	{
+		escreva("Olá¡, insira as informações conforme solicitado: ")
+		escreva("\n")
+		escreva("Informe o seu nome completo: ")
+		leia(nomecompleto)
+		escreva("Informe somente o seu ano de nascimento(1980): ")
+		leia(anonascimento)
+		escreva("Informe somente as horas de agora (somente número: 20): ")
+		leia(horaatual)
+		escreva("Informe os minutos de agora (somente número: 15): ")
+		leia(minutoatual)
+
+		//calculo para determinar a idade
+		idade = 2023 - anonascimento
+		
+		//calculo para determinar quanto falta para 22:30h
+		conversaohora = horaatual*60
+		totalhora = conversaohora + minutoatual
+		quantofalta = 1350 - totalhora
+
+		escreva("\n")
+		escreva("Seu nome completo é: ", nomecompleto, ".")
+		escreva("\n")
+		escreva("Você possuí ", idade, " anos de idade.")
+		escreva("\n")
+		escreva("Faltam ", quantofalta, " minutos para 22:30h.")
+		escreva("\n")	
+		
+	}
+}
