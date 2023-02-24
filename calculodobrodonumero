@@ -1,0 +1,21 @@
+programa
+{
+	//Calculo do dobro de um nÃºmero qualquer
+	real numero
+	real dobro
+	
+	funcao inicio()
+	{
+		escreva("Vamos calcular o dobro dos nÃºmeros!")
+		escreva("\n")
+		escreva("Informe o nÃºmero que vocÃª deseja dobrar: ")
+		leia(numero)
+
+		dobro = numero * 2
+		escreva("\n")
+		escreva("O dobro do nÃºmero ", numero, " Ã©: ", dobro)
+		escreva("\n")
+		escreva("\n")
+		escreva("Obrigado por calcular comigo :D")
+	}
+}
